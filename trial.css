@@ -78,9 +78,20 @@ nav a {
     transform: 45deg;
 }
 
+.video-container{
+    height:0;
+    z-index: -100;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 
-
-.video1 {
+/* .video1 {
     z-index: -100;
     background-size: cover;
     position: fixed;
@@ -88,7 +99,7 @@ nav a {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-   }
+   } */
 
 
 
