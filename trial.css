@@ -39,7 +39,7 @@ nav ul{
 nav a:hover {
     
    
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 100);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
     transition: 0.7s;
     border-radius: 10%;
     
@@ -132,7 +132,7 @@ box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
 
 
 .png2 {
-    
+    /* position: absolute; */
     width: 0px;
     float: left;
     padding: 0;
@@ -143,6 +143,16 @@ box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
     width: 0px;
     float: right;
  
+}
+
+.png4{
+    
+    position: absolute;
+    float: right;
+    right:  300px;
+    top: 1200px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -183,7 +193,7 @@ p {
 
 
 .skills {
-   
+  
   
     
     
@@ -194,7 +204,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
- 
+    
    
     
 }
@@ -208,6 +218,18 @@ p {
     opacity: 90%;
     color: gainsboro;
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+    margin: 20px
+    
+}
+
+.frontsk2{
+   
+    border-radius: 5px;
+    background-color: black;
+    opacity: 90%;
+    color: gainsboro;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+    margin: 20px
 }
 
 
@@ -384,6 +406,7 @@ iframe {
         position: relative;
         z-index: 10;
         
+        
        
     }
     
@@ -398,6 +421,7 @@ iframe {
         -webkit-transition-duration: 0.3s; 
         -webkit-transition-timing-function: ease; 
         border-radius: 25px;
+        margin: 15px;
     }
 
 .kii::after {
@@ -557,18 +581,24 @@ footer {
         width: 175px;
     }
 
-    nav{
-        width: 60%;
-    }
+
     .video1 {
     
     }
+    .png2, .png4{
+        visibility: hidden;
+      }
+      .sigpng{
+        width: 100px;
+      }
 
-}
+    
+
+
 
 @media screen and (max-width: 768px) {
     .kii {
-        width: 125px;
+        width: 300px;
     }
     .video1 {
   
@@ -577,7 +607,7 @@ footer {
         overflow-x: hidden ;
       }
 
-      .png2{
+      .png2, .png4{
         visibility: hidden;
       }
 
@@ -622,7 +652,16 @@ nav li {
     opacity: 0;
 }
 
+.backlt{
+    width: 240px;
+}
 
+.kiiimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 }
 
 
