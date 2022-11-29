@@ -15,7 +15,7 @@ html, body{
     margin: 0;
 }
 
-
+/* nav bsar stuff */
 
 nav ul{
     /* border: 1px solid;
@@ -72,7 +72,7 @@ nav a {
 
 
 
-
+/* Content/photos/videos */
 
 .line-1, .line-2 {
     transform: 45deg;
@@ -154,6 +154,8 @@ box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
     padding: 0;
     margin: 0;
 }
+
+
 
 
 a {
@@ -440,7 +442,7 @@ iframe {
 
  
 
- 
+  /* headers */
     
   
     h1 { 
@@ -575,6 +577,15 @@ footer {
 
 }
 
+.topBtnCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Tablet resolution */
 
 @media screen and (max-width: 1024px) {
     .kii {
@@ -591,9 +602,9 @@ footer {
       .sigpng{
         width: 100px;
       }
-
+    }
     
-
+/* phone resolution */
 
 
 @media screen and (max-width: 768px) {
@@ -666,7 +677,7 @@ nav li {
 
 
 
-
+/* 480p resolution */
 
 @media screen and (max-width: 481px) {
     .kii {
@@ -689,7 +700,11 @@ nav li {
      }
     }
 
-@media screen and (max-width: 320px) {
+
+
+/* dont even know why I did this resolution */
+
+    @media screen and (max-width: 320px) {
     .kii {
         width: 65px;
     }

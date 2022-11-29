@@ -1,3 +1,5 @@
+// navbar
+
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('nav ul');
@@ -25,3 +27,21 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// top button
+
+const topBtn = document.getElementById("topBtn");
+
+topBtn.addEventListener('click', function(){
+    window.scrollTo(top = 0, behavior = 'smooth' ) ;
+
+    topBtn();
+});
+
+
+// detect dark mode
+
+const isDarkMode = () => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
