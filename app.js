@@ -28,6 +28,31 @@ const navSlide = () => {
 
 navSlide();
 
+
+
+//load functions
+
+ window.addEventListener('load', function (){
+   
+    const links = document.querySelectorAll('nav li');
+    
+    links.forEach((link, index) => {
+        if(link.style.animation){
+         link.style.animation = '';
+         }
+         else {
+             link.style.animation =  `navLinkFade .5s ease forwards ${index / 7 + 0.1}s`;
+         }
+     });
+});
+
+
+
+
+
+
+
+
 // top button
 
 const topBtn = document.getElementById("topBtn");
@@ -43,5 +68,11 @@ topBtn.addEventListener('click', function(){
 
 const isDarkMode = () => {
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
-}
+};
 
+
+const loader = document.getElementById('preloader');
+
+window.addEventListener("load", function(){
+      loader.style.display = "none" ;
+});
